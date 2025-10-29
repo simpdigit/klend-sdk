@@ -9,5 +9,5 @@ use solana_pubkey::{pubkey, Pubkey};
 
 
   /// `kamino_lending` program ID.
-  pub const KAMINO_LENDING_ID: Pubkey = pubkey!("");
+  pub const KAMINO_LENDING_ID: Pubkey = pubkey!("KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD");
 

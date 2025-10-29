@@ -8,7 +8,7 @@
   pub(crate) mod r#borrow_obligation_liquidity;
   pub(crate) mod r#borrow_obligation_liquidity_v2;
   pub(crate) mod r#delete_referrer_state_and_short_url;
-  pub(crate) mod r#deposit_and_withdraw;
+  // pub(crate) mod r#deposit_and_withdraw; // Disabled due to codegen bug with duplicate fields
   pub(crate) mod r#deposit_obligation_collateral;
   pub(crate) mod r#deposit_obligation_collateral_v2;
   pub(crate) mod r#deposit_reserve_liquidity;
@@ -27,7 +27,7 @@
   pub(crate) mod r#init_reserve;
   pub(crate) mod r#init_user_metadata;
   pub(crate) mod r#liquidate_obligation_and_redeem_reserve_collateral;
-  pub(crate) mod r#liquidate_obligation_and_redeem_reserve_collateral_v2;
+  // pub(crate) mod r#liquidate_obligation_and_redeem_reserve_collateral_v2; // Disabled due to codegen bug with duplicate fields
   pub(crate) mod r#mark_obligation_for_deleveraging;
   pub(crate) mod r#redeem_fees;
   pub(crate) mod r#redeem_reserve_collateral;
@@ -35,7 +35,7 @@
   pub(crate) mod r#refresh_obligation_farms_for_reserve;
   pub(crate) mod r#refresh_reserve;
   pub(crate) mod r#refresh_reserves_batch;
-  pub(crate) mod r#repay_and_withdraw_and_redeem;
+  // pub(crate) mod r#repay_and_withdraw_and_redeem; // Disabled due to codegen bug with duplicate fields
   pub(crate) mod r#repay_obligation_liquidity;
   pub(crate) mod r#repay_obligation_liquidity_v2;
   pub(crate) mod r#request_elevation_group;
@@ -57,7 +57,7 @@
   pub use self::r#borrow_obligation_liquidity::*;
   pub use self::r#borrow_obligation_liquidity_v2::*;
   pub use self::r#delete_referrer_state_and_short_url::*;
-  pub use self::r#deposit_and_withdraw::*;
+  // pub use self::r#deposit_and_withdraw::*; // Disabled due to codegen bug
   pub use self::r#deposit_obligation_collateral::*;
   pub use self::r#deposit_obligation_collateral_v2::*;
   pub use self::r#deposit_reserve_liquidity::*;
@@ -76,7 +76,7 @@
   pub use self::r#init_reserve::*;
   pub use self::r#init_user_metadata::*;
   pub use self::r#liquidate_obligation_and_redeem_reserve_collateral::*;
-  pub use self::r#liquidate_obligation_and_redeem_reserve_collateral_v2::*;
+  // pub use self::r#liquidate_obligation_and_redeem_reserve_collateral_v2::*; // Disabled due to codegen bug
   pub use self::r#mark_obligation_for_deleveraging::*;
   pub use self::r#redeem_fees::*;
   pub use self::r#redeem_reserve_collateral::*;
@@ -84,7 +84,7 @@
   pub use self::r#refresh_obligation_farms_for_reserve::*;
   pub use self::r#refresh_reserve::*;
   pub use self::r#refresh_reserves_batch::*;
-  pub use self::r#repay_and_withdraw_and_redeem::*;
+  // pub use self::r#repay_and_withdraw_and_redeem::*; // Disabled due to codegen bug
   pub use self::r#repay_obligation_liquidity::*;
   pub use self::r#repay_obligation_liquidity_v2::*;
   pub use self::r#request_elevation_group::*;

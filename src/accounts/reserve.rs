@@ -17,7 +17,6 @@ use borsh::BorshDeserialize;
 #[derive(BorshSerialize, BorshDeserialize, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Reserve {
-pub discriminator: [u8; 8],
 /// Version of the reserve
 pub version: u64,
 /// Last slot when supply and rates updated
@@ -50,7 +49,10 @@ pub padding: [u64; 207],
 }
 
 
+// Primary discriminator (from klend-sdk)
 pub const RESERVE_DISCRIMINATOR: [u8; 8] = [43, 242, 204, 202, 26, 247, 59, 127];
+// Alternative discriminator (from klend source)
+pub const RESERVE_DISCRIMINATOR_ALT: [u8; 8] = [168, 206, 141, 106, 88, 76, 172, 167];
 
 impl Reserve {
   
